@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
+@Entity(name = "user")
 @Table(name = "user")
 public class User {
 
@@ -16,6 +16,7 @@ public class User {
 	private String firstName;
 	private String lastName;
 	private int id;
+	
 
 	public User(int userId, String firstName, String lastName, int id) {
 		super();

@@ -9,4 +9,6 @@ import com.test.user.entity.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
 
+	User findByUserId(int id);
+
 }
