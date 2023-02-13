@@ -23,6 +23,7 @@ import lombok.extern.slf4j.Slf4j;
 public class DepartmentController {
 
 	private static Logger LOGGER = LoggerFactory.getLogger(DepartmentController.class);
+
 	@Autowired
 	private DepartmentService depService;
 
