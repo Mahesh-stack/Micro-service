@@ -28,4 +28,8 @@ public class UserService {
 		}
 		return userExistOrNot;
 	}
+
+	public User findUser(int id) {
+		return userRepository.findByUserId(id);
+	}
 }
